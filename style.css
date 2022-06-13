@@ -1,0 +1,123 @@
+body {
+    color: #0f0;
+    background-color: black;
+    border: darkorange;
+    display: grid;
+}
+
+#top {
+    display: flex;
+    height: 10rem;
+    max-height: 15rem;
+ 
+}
+
+#lcr {
+    border: double blue;
+    display:flex;
+    align-content:space-around;
+    
+}
+
+.top-left {
+    height: max-content;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 10rem;
+    transition: all 1s ease-in-out;
+    border: solid black;
+    transform: rotateX(30deg);
+    transform:matrix(1, 0, .5, 1.2, 20, 10);
+}
+.top-left::after{
+    content: "Good Luck";
+    color: blue;
+    transition: all 2s ease-in-out;
+    
+}
+
+.top-left:hover {
+    color: darkorange;
+    text-shadow: yellow 3px 3px 30px ;
+    transition: all 1s ease-in-out;
+    border: yellow solid;
+    
+}
+
+.top-left:hover:after {
+    content: "Noob";
+    color: red;
+    transition: all 2s ease-in-out;
+    transform: rotateX(180deg);
+    
+}
+
+.top-left::before::after{
+    transition: all .2s ease-in-out;
+}
+
+.top-right {
+    text-align: right;
+    
+}
+
+.top-right h3:hover {
+    color: aqua;
+    
+    
+    box-shadow: darkorange 0px 0px 0px 0px;
+
+}
+
+.top-center {
+    
+    padding-right: 10rem;
+    transform:matrix(3, -0.4, -.5, 3, 500, 80);
+    
+    transition: all 1s ease-in-out;
+}
+
+.top-center:hover {
+   
+    transform: matrix(5, 0, .2, 1.2, 25, 10) ;
+    border: yellow solid;
+    color: darkorange;
+    text-shadow: yellow 3px 3px 30px;
+
+}
+
+#gitlink:hover {
+    box-shadow: #0f0 0px 20px 10px 5px;
+}
+
+
+#left {
+    display: flexbox;
+    top: 50%;
+    width: 20%;
+    height: 50rem;
+    height: max-content;
+    justify-content:left;
+}
+
+#right {
+    display: flexbox;
+    justify-content:right;
+    border: gray solid;
+}
+
+#center {
+    border: solid gray;
+    display: flexbox;
+    width: 70%;
+}
+
+img {
+    width: 50%;
+}
+
+#bottom {
+    border: solid red;
+    height: 15rem;
+}
+
